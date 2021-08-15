@@ -1,9 +1,8 @@
 body {
     font-size: 30px;
     background-color: rgb(248, 246, 244);
-    /* padding: 20px; */
 }
-h1 {
+h1.title {
     /* width: 100%; */
     text-align: center;
     padding: 30px;
@@ -17,7 +16,35 @@ location {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
-img {
-    width: 500px;
+address {
+    width: 380;
+    height: 450;
+    padding: 20px;
+    border: 2px solid green;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+iframe {
+    margin-top: 30px;
+    width: 600px;
+    height: 450px;
+    /* max-width: 450px; */
+}
+#email {
+    margin-top: 20px;
+}
+@media screen and (max-width: 400px) {
+    address {
+        padding: 30px;
+    }
+    iframe {
+        /* width: 380px; */
+        max-width: 90%;
+    }
+    h1, address {
+        font-size: 80%;
+    }
 }
